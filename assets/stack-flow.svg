@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 300" width="820" height="300" role="img" aria-label="rimulabの技術スタック構成図: Android、Node.js、AWS、MongoDB、CI/CD">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00b3ff"/>
+      <stop offset="1" stop-color="#7ee787"/>
+    </linearGradient>
+    <style>
+      text { font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; fill: #e6edf3; }
+      .title { font-size: 11px; fill: #8b949e; letter-spacing: 2px; }
+      .name { font-size: 15px; font-weight: 700; }
+      .sub { font-size: 11px; fill: #8b949e; }
+      .box { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; }
+      .main { stroke: url(#accent); stroke-width: 2; }
+      .flow { stroke: #00b3ff; stroke-width: 2; fill: none; stroke-dasharray: 6 6; animation: dash 1.2s linear infinite; }
+      .ci { stroke: #7ee787; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes dash { to { stroke-dashoffset: -12; } }
+      @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#00b3ff"/>
+    </marker>
+    <marker id="arrow-ci" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7ee787"/>
+    </marker>
+  </defs>
+
+  <rect width="820" height="300" rx="16" fill="url(#bg)"/>
+  <text class="title" x="28" y="34">HOW I BUILD — BACKEND &amp; CLOUD FIRST</text>
+
+  <!-- Client -->
+  <g>
+    <rect class="box" x="28" y="80" width="170" height="86" rx="12"/>
+    <text class="name" x="46" y="112">Android</text>
+    <text class="sub" x="46" y="134">Kotlin / MVVM / SQLite</text>
+    <text class="sub" x="46" y="152">Coroutines / ViewBinding</text>
+  </g>
+
+  <!-- API -->
+  <g>
+    <rect class="box main pulse" x="296" y="62" width="244" height="122" rx="14"/>
+    <text class="name" x="318" y="94">Node.js / TypeScript</text>
+    <text class="sub" x="318" y="116">Express · Socket.IO · Passport</text>
+    <text class="sub" x="318" y="136">REST API / リアルタイム通信</text>
+    <text class="sub" x="318" y="156">Mongoose / マルチテナント設計</text>
+    <text class="sub" x="318" y="174">HTTP Digest 認証 / 外部API連携</text>
+  </g>
+
+  <!-- DB -->
+  <g>
+    <rect class="box" x="632" y="62" width="160" height="56" rx="12"/>
+    <text class="name" x="650" y="86">MongoDB</text>
+    <text class="sub" x="650" y="104">Mongoose / DocumentDB</text>
+    <rect class="box" x="632" y="130" width="160" height="56" rx="12"/>
+    <text class="name" x="650" y="154">AWS S3</text>
+    <text class="sub" x="650" y="172">画像・ログのストレージ</text>
+  </g>
+
+  <!-- Flow arrows -->
+  <path class="flow" d="M198 123 H294" marker-end="url(#arrow)"/>
+  <path class="flow" d="M540 90 H630" marker-end="url(#arrow)"/>
+  <path class="flow" d="M540 158 H630" marker-end="url(#arrow)"/>
+
+  <!-- Infra band -->
+  <rect class="box" x="28" y="222" width="764" height="52" rx="12"/>
+  <text class="name" x="46" y="245" style="font-size:13px">AWS EC2</text>
+  <text class="sub" x="46" y="263">Amazon Linux 2023 · PM2 · Docker Compose</text>
+
+  <text class="name" x="330" y="245" style="font-size:13px">CI/CD</text>
+  <text class="sub" x="330" y="263">Bitbucket Pipelines / GitHub Actions</text>
+
+  <text class="name" x="610" y="245" style="font-size:13px">AI-driven dev</text>
+  <text class="sub" x="610" y="263">Claude Code · Codex · スペック駆動</text>
+
+  <!-- deploy line from API down to infra -->
+  <path class="flow ci" d="M418 184 V220" marker-end="url(#arrow-ci)"/>
+</svg>
