@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:00b3ff,100:7ee787&text=rimulab&fontSize=56&fontColor=0d1117&fontAlignY=38&desc=Backend%20%26%20Cloud%20Engineer&descSize=20&descAlignY=60" alt="rimulab" width="100%"/>
+<img src="./assets/banner.svg" alt="rimulab" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=00B3FF&center=true&vCenter=true&width=640&lines=Node.js+%2F+TypeScript+%C3%97+AWS;0%E3%81%8B%E3%82%89%E3%81%AE%E6%96%B0%E8%A6%8F%E9%96%8B%E7%99%BA%E3%80%9C%E4%BF%9D%E5%AE%88%E3%83%BB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97;Docker+%2F+CI%2FCD+%2F+MongoDB;AI%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB%E3%80%81%E8%A8%AD%E8%A8%88%E3%81%8B%E3%82%89%E9%81%8B%E7%94%A8%E3%81%BE%E3%81%A7)](https://rimulab.github.io/)
 
@@ -62,6 +62,6 @@
 <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rimulab&theme=github_dark" alt="most commit language"/>
 <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rimulab&theme=github_dark&utcOffset=9" alt="productive time"/>
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=rimulab&theme=dark&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=rimulab&theme=dark&hide_border=true&date_format=n%2Fj%5B%2Fy%5D)](https://git.io/streak-stats)
 
 </div>
